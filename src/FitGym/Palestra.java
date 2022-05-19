@@ -3,13 +3,12 @@ package FitGym;
 import java.util.ArrayList;
 
 public class Palestra {
-
-    /*
-    Attributi dell classe palestra
-    Utilizziamo 2 arrayList, uno per gli abbonati e uno per gli attrezzi
-     */
-
+    /**
+     Attributi dell classe palestra
+     Utilizziamo 2 arrayList, uno per gli abbonati e uno per gli attrezzi
+    **/
     private ArrayList<Attrezzi> attrezzi;
+
     private ArrayList<Abbonato> abbonati;
 
     public Palestra() {

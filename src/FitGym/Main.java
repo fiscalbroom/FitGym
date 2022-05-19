@@ -78,20 +78,24 @@ public class Main {
                         case 0:
                             System.out.println("Arrivederci " + System.getProperty("user.name"));
                             System.out.println("Abbi una buona giornata!");
+                            Main.attesa();
                             return;
                         case 1:
                             Abbonato a = Abbonato.creaAbbonato(input);
                             p.aggiungiAbbonato(a);
+                            Main.attesa();
                            break;
                         case 2:
                             System.out.println("Inserisci il codice dell'abbonato da rimuovere");
                             p.rimuoviAbbonatoDaCodice(input.nextLine());
+                            Main.attesa();
                             break;
                         case 3:
                             p.stampaAttrezzi();
                             break;
                         default:
                             System.out.println("L'operazione richiesta è inesistente");
+                            Main.attesa();
                     }
                 }
             }if (Objects.equals(nomeAdmin, nomeInput) && Objects.equals(passAdmin, passInput)) {
@@ -131,6 +135,7 @@ public class Main {
                         case 0:
                             System.out.println("Arrivederci admin");
                             System.out.println("Abbi una buona giornata!");
+                            Main.attesa();
                             return;
                         case 1:
                             Attrezzi at = Attrezzi.daInput();
@@ -175,5 +180,13 @@ public class Main {
                 System.out.println("Credenziali errate, riprovare");
             }
         } while (true);
+    }
+
+    public static void attesa(){
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

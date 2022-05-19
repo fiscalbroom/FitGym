@@ -122,10 +122,10 @@ public class Abbonato {
 
     }
 
-    public static void clrscr(){
+   /* public static void clrscr(){
         for(int i = 0; i < 80*300; i++){
             System.out.print("\b");
     }
-}
+}*/
 }
 
