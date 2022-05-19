@@ -43,7 +43,7 @@ public class Main {
 
         while (n == 0) {
             System.out.println(System.lineSeparator().repeat(50));
-            System.out.println("""
+            System.out.printf("""
                     *------------------------------------*
                     Ciao e benvenuto nella mia palestra!
                     
@@ -56,8 +56,11 @@ public class Main {
                     6) Stampa lista abbonati e attrezzi
                     
                     (Per uscire dal programma premi 0)
+                    
+                    Login  eseguito come: %s
                     *------------------------------------*
-                    """);
+                    
+                    """, System.getProperty("user.name"));
             scelta = input.nextInt();
             switch(scelta){
                 case 0:
