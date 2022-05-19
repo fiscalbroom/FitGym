@@ -3,7 +3,14 @@ package FitGym;
 import java.util.Objects;
 import java.util.Scanner;
 
+/**
+ * Questa classe contiene metodi per la gestione e creazione degli oggetti
+ * della classe attrezzo, in aggiunta ai getter/setter e i costruttori della classe
+ */
+
 public class Attrezzi {
+
+
     //attributi
     private String nomeOggetto;
     private int quantità;
